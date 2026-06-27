@@ -1,5 +1,4 @@
 # CupMan
-# CupMan
 usernames and password:
 User1,password1;
 User2,password2;
