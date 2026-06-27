@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="346.0" prefWidth="562.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cupMan.LogInController">
+   <children>
+      <ImageView fitHeight="392.0" fitWidth="617.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../FirstPage.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="165.0" layoutY="14.0" prefHeight="44.0" prefWidth="231.0" text="CupMan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="65.0" prefHeight="30.0" prefWidth="62.0" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="121.0" prefHeight="30.0" prefWidth="82.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserTF" layoutX="240.0" layoutY="123.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: #ccc;" />
+      <Label layoutX="144.0" layoutY="160.0" prefHeight="26.0" prefWidth="91.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="191.0" layoutY="213.0" mnemonicParsing="false" onAction="#confirm" prefWidth="180.0" style="-fx-background-color: #4285f4; -fx-text-fill: white;" text="Log in" />
+      <Label fx:id="errorlabel" alignment="CENTER" layoutX="144.0" layoutY="285.0" prefHeight="40.0" prefWidth="274.0" textFill="RED" />
+      <Button layoutX="191.0" layoutY="253.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #4285f4; -fx-text-fill: white;" text="Back" />
+      <PasswordField fx:id="passwordPF" layoutX="240.0" layoutY="167.0" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: #ccc;" />
+   </children>
+</AnchorPane>

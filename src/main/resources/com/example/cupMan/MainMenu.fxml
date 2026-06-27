@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cupMan.MainMenuController">
+   <children>
+      <ImageView fitHeight="672.0" fitWidth="1012.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../MainMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="329.0" fitWidth="364.0" layoutX="427.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IdleCupMan2.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="46.0" layoutY="88.0" prefHeight="457.0" prefWidth="326.0" spacing="5.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="210.0" text="Start First Round:" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#startFirstGame" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="1" />
+            <Label prefHeight="30.0" prefWidth="207.0" text="Start Second  Round:" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#startSecondGame" prefHeight="35.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="2" />
+            <Label prefHeight="29.0" prefWidth="209.0" text="See your high score:" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#showHighScore" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="See" />
+            <Label prefHeight="28.0" prefWidth="159.0" text="See LeaderBoard:" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#ShowLeaderboard" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="See" />
+            <Label prefHeight="33.0" prefWidth="216.0" text="Rules:" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#ShowRules" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="See" />
+            <Label prefHeight="27.0" prefWidth="172.0" text="Exit:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Exit" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #FFF200; -fx-text-fill: #000000; -fx-border-color: #FFFFFF;" text="Exit" />
+         </children>
+      </VBox>
+      <Label fx:id="errorLabel" alignment="TOP_LEFT" layoutX="156.0" layoutY="15.0" prefHeight="73.0" prefWidth="216.0" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <VBox fx:id="infoVBox" layoutX="411.0" layoutY="110.0" prefHeight="372.0" prefWidth="360.0" visible="false">
+         <children>
+            <Label fx:id="titleLabel" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="364.0" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="infoLabel" alignment="TOP_LEFT" prefHeight="329.0" prefWidth="381.0" textFill="#ddff00">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
