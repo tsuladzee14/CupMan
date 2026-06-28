@@ -31,7 +31,7 @@
             <Font name="System Bold" size="96.0" />
          </font>
       </Label>
-      <Button fx:id="menuButton" layoutY="-3.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="151.0" prefWidth="169.0" style="-fx-background-color: #4285f4; -fx-text-fill: white;" text="Back to main menu" visible="false">
+      <Button fx:id="menuButton" layoutY="-3.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="151.0" prefWidth="169.0" style="-fx-background-color: red;" text="Back to main menu" textFill="#eeff00" visible="false">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
